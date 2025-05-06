@@ -11,7 +11,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Мінус висота меню, щоб не виходило за екран */
+    min-height: calc(100vh - 80px); /* Мінус висота меню, щоб не виходило за екран */
 }
 
 
