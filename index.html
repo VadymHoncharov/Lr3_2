@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Графічний пароль</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Введіть пароль</h2>
+        <input type="password" id="passwordDisplay" placeholder="Натисніть кнопки" disabled>
+
+        <div class="keyboard">
+            <!-- Створюємо кнопки з цифрами 0–9 -->
+            <button onclick="addDigit('1')">1</button>
+            <button onclick="addDigit('2')">2</button>
+            <button onclick="addDigit('3')">3</button>
+            <button onclick="addDigit('4')">4</button>
+            <button onclick="addDigit('5')">5</button>
+            <button onclick="addDigit('6')">6</button>
+            <button onclick="addDigit('7')">7</button>
+            <button onclick="addDigit('8')">8</button>
+            <button onclick="addDigit('9')">9</button>
+            <button onclick="addDigit('0')">0</button>
+        </div>
+
+        <button class="confirm" onclick="checkPassword()">Підтвердити</button>
+        <p id="error" class="error"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
